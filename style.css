@@ -13,8 +13,7 @@ body {
     font-weight: 400;
 }
 
-header {
-    /* margin: auto; */
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,17 +22,46 @@ header {
 }
 
 .bio {
-    margin: auto;
     background-color: white;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-left: none;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.221);
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 450px;
+    max-width: 700px;
 }
 
 .name {
     text-decoration: underline;
+}
+
+.headshot {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.658);
+}
+
+.socials {
+    width: 30px;
+    transition: 0.2s all;
+}
+
+.links {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.bio, .headshot {
+    margin-top: 30px;
+}
+
+.socials:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
