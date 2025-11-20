@@ -18,6 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    padding-bottom: 60px;
     background: linear-gradient(to bottom right, rgb(80, 182, 255) 50%, white 50%);
 }
 
@@ -30,6 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border-radius: 5px;
     max-width: 700px;
 }
 
@@ -41,6 +43,7 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.658);
+    transition: 0.2s all;
 }
 
 .socials {
@@ -64,4 +67,58 @@ body {
 .socials:hover {
     cursor: pointer;
     transform: scale(1.2);
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 470px);
+    grid-template-rows: repeat(2, 350px);
+    padding: 10px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.555);
+    gap: 10px;
+    border-radius: 5px;
+    transition: 0.2s all;
+}
+
+.item:hover {
+    transform: scale(1.01);
+}
+
+.proj-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item h1 {
+    text-decoration: underline;
+}
+
+.preview {
+    width: 400px;
+    border: 1px solid black;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.555);
+    border-radius: 10px;
+    transition: 0.2s all;
+    cursor: pointer;
 }
