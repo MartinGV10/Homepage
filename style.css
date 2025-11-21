@@ -11,6 +11,7 @@ h1 {
 
 body {
     font-weight: 400;
+    background-color: #E0E0E0;
 }
 
 .header {
@@ -19,7 +20,7 @@ body {
     align-items: center;
     padding: 20px;
     padding-bottom: 60px;
-    background: linear-gradient(to bottom right, rgb(80, 182, 255) 50%, white 50%);
+    background: linear-gradient(to bottom right, #3A606E 50%, #E0E0E0 50%);
 }
 
 .bio {
@@ -82,8 +83,15 @@ body {
     grid-template-columns: repeat(3, 470px);
     grid-template-rows: repeat(2, 350px);
     padding: 10px;
+    padding-bottom: 30px;
     gap: 50px;
     justify-content: center;
+    background: linear-gradient(18deg, #828E82 50%, #E0E0E0 50%);
+    width: 100%;
+}
+
+.projects > :last-child {
+    grid-column: 2/3;
 }
 
 .item {
@@ -97,6 +105,7 @@ body {
     gap: 10px;
     border-radius: 5px;
     transition: 0.2s all;
+    background-color: white;
 }
 
 .item:hover {
@@ -121,4 +130,59 @@ body {
     border-radius: 10px;
     transition: 0.2s all;
     cursor: pointer;
+    transition: 0.2s all;
+}
+
+.preview:hover {
+    transform: scale(1.025);
+}
+
+.grad {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.skills {
+    display: flex;
+    gap: 100px;
+    
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(170deg, #AAAE8E 50%, #E0E0E0 50%);
+    /* align-items: center; */
+    width: 100%;
+    padding: 20px;
+}
+
+.lang {
+    width: 40px;
+    opacity: 0.8;
+    transition: 0.2s all;
+}
+
+.lang:hover {
+    opacity: 1;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 7px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: 0.2s all;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    background-color: aliceblue;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
