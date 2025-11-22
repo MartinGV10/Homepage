@@ -86,13 +86,13 @@ body {
     padding-bottom: 30px;
     gap: 50px;
     justify-content: center;
-    background: linear-gradient(18deg, #828E82 50%, #E0E0E0 50%);
+    /* background: linear-gradient(18deg, #828E82 50%, #E0E0E0 50%); */
     width: 100%;
 }
 
-.projects > :last-child {
+/* .projects > :last-child {
     grid-column: 2/3;
-}
+} */
 
 .item {
     text-align: center;
@@ -148,7 +148,7 @@ body {
     
     text-align: center;
     justify-content: center;
-    background: linear-gradient(170deg, #AAAE8E 50%, #E0E0E0 50%);
+    /* background: linear-gradient(170deg, #AAAE8E 50%, #E0E0E0 50%); */
     /* align-items: center; */
     width: 100%;
     padding: 20px;
@@ -186,3 +186,48 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+
+footer {
+    background-color: #3A606E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.right svg {
+    width: 20px;
+}
+
+.email, .phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right .links {
+    justify-content: space-around;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left p {
+    font-weight: 500;
+}
+
+.left h1 {
+    text-decoration: underline;
+}
+
