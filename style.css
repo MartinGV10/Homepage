@@ -47,6 +47,11 @@ body {
     transition: 0.2s all;
 }
 
+.headshot:hover {
+    transform: scale(1.01);
+    border-color: #3A606E;
+}
+
 .socials {
     width: 30px;
     transition: 0.2s all;
@@ -80,8 +85,8 @@ body {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, 470px);
-    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(3, minmax(330px, 500px));
+    grid-template-rows: repeat(2, 470px);
     padding: 10px;
     padding-bottom: 30px;
     gap: 50px;
@@ -124,7 +129,7 @@ body {
 }
 
 .preview {
-    width: 400px;
+    max-width: 400px;
     border: 1px solid black;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.555);
     border-radius: 10px;
@@ -136,6 +141,27 @@ body {
 .preview:hover {
     transform: scale(1.025);
 }
+
+.stack {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: 0.2s all;
+}
+
+.stack li {
+    list-style-type: none;
+}
+
+.stack:hover {
+    border-color: #3A606E;
+}
+
+
+
+
 
 .grad {
     font-weight: 500;
@@ -152,6 +178,7 @@ body {
     /* align-items: center; */
     width: 100%;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .lang {
@@ -193,7 +220,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 30px;
 }
 
 .right {
@@ -230,4 +257,9 @@ footer {
 .left h1 {
     text-decoration: underline;
 }
+
+
+/* Media queries */
+
+
 
